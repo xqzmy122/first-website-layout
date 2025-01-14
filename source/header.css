@@ -1,0 +1,105 @@
+@import url(https://fonts.googleapis.com/css?family=Michroma&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Michroma, serif;
+}
+
+a {
+    color: aquamarine;
+    text-decoration: none;
+    font-size: 20px;
+    padding-inline: 10px;
+}
+
+.nav-bar {
+    background-color: rgb(43, 43, 43);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.drop {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li {
+    list-style: none;
+}
+
+.ul-nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-block: 5px;
+}
+
+.ul-nav a:hover {
+    color: rgb(249, 249, 249);
+}
+
+.ul-nav>a {
+    display: block;
+}
+
+.logo {
+    width: 30px;
+    padding-top: 10px;
+}
+
+.yt {
+    width: 30px;
+}
+
+.tg {
+    width: 30px;
+}
+
+.burger-btn {
+    display: none;
+}
+
+.burger-btn:hover {
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 1000px) {
+    .drop {
+        justify-content: space-between;
+    }
+
+    .burger-btn {
+        width: 40px;
+        padding: 5px;
+        padding-bottom: 5px;
+        color: rgb(194, 194, 194);
+        background-color: rgb(43, 43, 43);
+        border: 2px solid rgb(43, 43, 43);
+        border-radius: 10px;
+        display: block;
+        font-size: 20px;
+    }
+
+    .ul-nav {
+        display: none;
+    }
+
+    .drop:hover .ul-nav {
+        display: block;
+        position: absolute;
+        z-index: 200;
+        top: 40px;
+        background-color: rgb(43, 43, 43);
+        right: 0.5px;
+    }
+
+    .nav-bar {
+        justify-content: space-between;
+    }
+}
